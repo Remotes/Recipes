@@ -1,1 +1,1 @@
-?([{"url" : "maps.google.com", "script" : "https://raw.github.com/Remotes/Recipes/master/google.maps"}]);
+recipes([{"url" : "maps.google.com", "script" : "https://raw.github.com/Remotes/Recipes/master/google.maps"}]);
