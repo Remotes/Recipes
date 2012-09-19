@@ -1,5 +1,3 @@
-define([],function(){
-	return (function(){
-		alert("running Google Maps recipe");
-	});
-});
+(function(Remotes){
+    alert("Google maps hijacked");
+})(new Remotes("preview"));
