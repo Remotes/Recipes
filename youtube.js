@@ -34,11 +34,11 @@
 
 
     Remotes
-        .on("swipe-left", function(e){ fireKeyboarEvent(document,keys.RIGHT); })
-		.on("swipe-right", function(e){ fireKeyboarEvent(document,keys.LEFT); })
-		.on("swipe-up", function(e){ fireKeyboarEvent(document, keys.DOWN); })
-		.on("swipe-down", function(e){ fireKeyboarEvent(document,keys.UP); })
-		.on("tap", function(e){ fireKeyboarEvent(document, keys.ENTER); })
+        .on("swipe-left", function(e){ fireKeyboarEvent(document.body,keys.RIGHT); })
+		.on("swipe-right", function(e){ fireKeyboarEvent(document.body,keys.LEFT); })
+		.on("swipe-up", function(e){ fireKeyboarEvent(document.body, keys.DOWN); })
+		.on("swipe-down", function(e){ fireKeyboarEvent(document.body,keys.UP); })
+		.on("tap", function(e){ fireKeyboarEvent(document.body, keys.ENTER); })
 		.on("hold", function(e){ /* your magic goes here */ })
 		.on("release", function(e){ /* your magic goes here */ });
 
