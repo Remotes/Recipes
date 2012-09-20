@@ -36,8 +36,8 @@
     Remotes
         .on("swipe-left", function(e){ fireKeyboarEvent(document.body,keys.RIGHT); })
 		.on("swipe-right", function(e){ fireKeyboarEvent(document.body,keys.LEFT); })
-		.on("swipe-up", function(e){ console.log("firing", keys.DOWN); fireKeyboarEvent(document.body, keys.DOWN); })
-		.on("swipe-down", function(e){ console.log("firing", keys.UP); fireKeyboarEvent(document.body,keys.UP); })
+		.on("swipe-up", function(e){ console.log("firing", keys.DOWN); window.location = 'fireKeyboarEvent(document.body, keys.DOWN);';  })
+		.on("swipe-down", function(e){ console.log("firing", keys.UP); window.location = 'fireKeyboarEvent(document.body,keys.UP);'; })
 		.on("tap", function(e){ fireKeyboarEvent(document.body, keys.ENTER); })
 		.on("hold", function(e){ /* your magic goes here */ })
 		.on("release", function(e){ /* your magic goes here */ });
