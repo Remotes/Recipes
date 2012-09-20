@@ -33,7 +33,7 @@
 // ENTER : 13
 
 
-    new Remotes("preview")
+    Remotes
         .on("swipe-left", function(e){ fireKeyboarEvent(document.keys.RIGHT); })
 		.on("swipe-right", function(e){ fireKeyboarEvent(document.keys.LEFT); })
 		.on("swipe-up", function(e){ fireKeyboarEvent(document.keys.DOWN); })
