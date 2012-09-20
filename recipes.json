@@ -1,1 +1,7 @@
-recipes([{"url" : "maps.google.com", "script" : "https://raw.github.com/Remotes/Recipes/master/google.maps.js"}]);
+recipes([
+	{"url" : "maps.google.com", 
+	 "script" : "https://raw.github.com/Remotes/Recipes/master/google.maps.js"},
+	{"url" : "youtube.com/leanback",
+	 "script" : "https://raw.github.com/Remotes/Recipes/master/youtube.js" 
+	}
+]);
