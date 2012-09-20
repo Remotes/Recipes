@@ -33,11 +33,11 @@
 // ENTER : 13
 
     Remotes
-        .on("swipe-left", function(e){ fireKeyboarEvent(document.body,keys.RIGHT); })
-		.on("swipe-right", function(e){ fireKeyboarEvent(document.body,keys.LEFT); })
-		.on("swipe-up", function(e){ console.log("firing", keys.DOWN); window.location = 'javascript:var eventObj = document.createEvent("Events"); eventObj.initEvent("keydown", true, true); eventObj.which = 40; eventObj.keyCode = 40; document.dispatchEvent(eventObj);';  })
-		.on("swipe-down", function(e){ console.log("firing", keys.UP); window.location = 'javascript:var eventObj = document.createEvent("Events"); eventObj.initEvent("keydown", true, true); eventObj.which = 38; eventObj.keyCode = 38; document.dispatchEvent(eventObj);'; })
-		.on("tap", function(e){ fireKeyboarEvent(document.body, keys.ENTER); })
+        .on("swipe-left", function(e){ window.location = 'javascript:var eventObj = document.createEvent("Events"); eventObj.initEvent("keydown", true, true); eventObj.which = 37; eventObj.keyCode = 37; document.dispatchEvent(eventObj);'; })
+		.on("swipe-right", function(e){ window.location = 'javascript:var eventObj = document.createEvent("Events"); eventObj.initEvent("keydown", true, true); eventObj.which = 39; eventObj.keyCode = 39; document.dispatchEvent(eventObj);'; })
+		.on("swipe-up", function(e){ window.location = 'javascript:var eventObj = document.createEvent("Events"); eventObj.initEvent("keydown", true, true); eventObj.which = 38; eventObj.keyCode = 38; document.dispatchEvent(eventObj);';  })
+		.on("swipe-down", function(e){ window.location = 'javascript:var eventObj = document.createEvent("Events"); eventObj.initEvent("keydown", true, true); eventObj.which = 40; eventObj.keyCode = 40; document.dispatchEvent(eventObj);'; })
+		.on("tap", function(e){ window.location = 'javascript:var eventObj = document.createEvent("Events"); eventObj.initEvent("keydown", true, true); eventObj.which = 13; eventObj.keyCode = 13; document.dispatchEvent(eventObj);'; })
 		.on("hold", function(e){ /* your magic goes here */ })
 		.on("release", function(e){ /* your magic goes here */ });
 
