@@ -32,12 +32,11 @@
 // down : 40
 // ENTER : 13
 
-
     Remotes
         .on("swipe-left", function(e){ fireKeyboarEvent(document.body,keys.RIGHT); })
 		.on("swipe-right", function(e){ fireKeyboarEvent(document.body,keys.LEFT); })
-		.on("swipe-up", function(e){ console.log("firing", keys.DOWN); window.location = 'javascript:fireKeyboarEvent(document.body, 40);';  })
-		.on("swipe-down", function(e){ console.log("firing", keys.UP); window.location = 'javascript:fireKeyboarEvent(document.body,38);'; })
+		.on("swipe-up", function(e){ console.log("firing", keys.DOWN); window.location = 'javascript:var eventObj = document.createEvent("Events"); eventObj.initEvent("keydown", true, true); eventObj.which = 40; eventObj.keyCode = 40; document.dispatchEvent(eventObj);';  })
+		.on("swipe-down", function(e){ console.log("firing", keys.UP); window.location = 'javascript:var eventObj = document.createEvent("Events"); eventObj.initEvent("keydown", true, true); eventObj.which = 38; eventObj.keyCode = 38; document.dispatchEvent(eventObj);'; })
 		.on("tap", function(e){ fireKeyboarEvent(document.body, keys.ENTER); })
 		.on("hold", function(e){ /* your magic goes here */ })
 		.on("release", function(e){ /* your magic goes here */ });
