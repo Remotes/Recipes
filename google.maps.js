@@ -1,3 +1,3 @@
 (function(Remotes){
-    alert("Google maps hijacked");
+    //alert("Google maps hijacked");
 })(new Remotes("preview"));
