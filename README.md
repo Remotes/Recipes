@@ -4,6 +4,6 @@ Recipes allow developers to patch existing websites to be usable with Remotes wi
 
 ## Available recipes
 
-Youtube
-Youtube leanback
-Google Maps
+* Youtube
+* Youtube leanback
+* Google Maps
